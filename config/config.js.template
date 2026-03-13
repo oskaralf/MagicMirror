@@ -113,7 +113,7 @@ let config = {
 			updateInterval: 60 * 1000,
 			displayCount: 6,
 			stations: [
-			{ id: "740021654", name: "Medborgarplatsen", modes: ["METRO"] }
+			{ id: "740021647", name: "Stadion T-bana", modes: ["METRO"] }
 			]
 		}
 		},
