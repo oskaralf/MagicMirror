@@ -27,8 +27,8 @@ let config = {
 	httpsPrivateKey: "",	// HTTPS private key path, only require when useHttps is true
 	httpsCertificate: "",	// HTTPS Certificate path, only require when useHttps is true
 
-	language: "en",
-	locale: "en-US",   // this variable is provided as a consistent location
+	language: "sv",
+	locale: "sv-SE",   // this variable is provided as a consistent location
 			   // it is currently only used by 3rd party modules. no MagicMirror code uses this value
 			   // as we have no usage, we  have no constraints on what this field holds
 			   // see https://en.wikipedia.org/wiki/Locale_(computer_software) for the possibilities
@@ -51,14 +51,14 @@ let config = {
 		},
 		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "Kalender",
 			position: "top_left",
 			config: {
 				calendars: [
 					{
 						fetchInterval: 7 * 24 * 60 * 60 * 1000,
 						symbol: "calendar-check",
-						url: "https://ics.calendarlabs.com/76/mm3137/US_Holidays.ics"
+						url: "https://www.officeholidays.com/ics-clean/sweden"
 					}
 				]
 			}
@@ -73,8 +73,8 @@ let config = {
 			config: {
 				weatherProvider: "openmeteo",
 				type: "current",
-				lat: 40.776676,
-				lon: -73.971321
+				lat: 59.3293,
+				lon: 18.0686
 			}
 		},
 		{
@@ -84,8 +84,8 @@ let config = {
 			config: {
 				weatherProvider: "openmeteo",
 				type: "forecast",
-				lat: 40.776676,
-				lon: -73.971321
+				lat: 59.3293,
+				lon: 18.0686
 			}
 		},
 		{
@@ -104,6 +104,21 @@ let config = {
 				broadcastNewsUpdates: true
 			}
 		},
+
+		{
+		module: "MMM-SL",
+		position: "bottom_left",
+		config: {
+			apiKey: "${TRAFIKLAB_API_KEY}",
+			updateInterval: 60 * 1000,
+			displayCount: 6,
+			stations: [
+			{ id: "740021654", name: "Medborgarplatsen", modes: ["METRO"] }
+			]
+		}
+		},
+
+
 	]
 };
 

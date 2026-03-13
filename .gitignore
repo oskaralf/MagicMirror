@@ -66,6 +66,8 @@ Temporary Items
 !/css/roboto.css
 
 # Ignore users config file but keep the sample.
+config/config.js
+config/config.env
 !config/config.js.sample
 
 # Vim
