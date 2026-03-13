@@ -53,3 +53,7 @@ To donate, please follow [this](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xcl
 <p style="text-align: center">
   <a href="https://forum.magicmirror.builders/topic/728/magicmirror-is-voted-number-1-in-the-magpi-top-50"><img src="https://magicmirror.builders/img/magpi-best-watermark-custom.png" width="150" alt="MagPi Top 50"></a>
 </p>
+
+För att hitta din stations ID skriv curl "https://api.resrobot.se/v2.1/location.name?input={NAMN_PÅ_STATION}&accessId={RESROBOT_API_KEY}&format=json"
+
+Men API nyckeln som du använder i koden är TRAFIKLAB REALTIME APIs
