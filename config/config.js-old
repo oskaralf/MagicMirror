@@ -58,12 +58,12 @@ let config = {
 					{
 						fetchInterval: 7 * 24 * 60 * 60 * 1000,
 						symbol: "calendar-check",
-						url: "${HOLIDAYS_SWEDEN}"
+						url: "https://calendar.google.com/calendar/ical/sv.swedish%23holiday%40group.v.calendar.google.com/public/basic.ics"
 					},
 					{
-						fetchInterval: 4 * 60 * 60 * 1000,
+						fetchInterval: 7 * 24 * 60 * 60 * 1000,
 						symbol: "calendar-check",
-						url: "${OSKAR_CALENDAR}"
+						url: "https://calendar.google.com/calendar/ical/o.alfredsson18%40gmail.com/private-e7d77b2a9b858c476a8ba9282642f3fb/basic.ics"
 					}
 				]
 			}
@@ -114,7 +114,7 @@ let config = {
 		module: "MMM-SL",
 		position: "bottom_left",
 		config: {
-			apiKey: "${TRAFIKLAB_API_KEY}",
+			apiKey: "37db5891370c48c0a837c55f655c396f",
 			updateInterval: 5 * 60 * 1000,
 			displayCount: 8,
 			stations: [
