@@ -92,10 +92,6 @@ Module.register("MMM-SL", {
         timeCell.style.whiteSpace = "nowrap";
         timeCell.className = "bright";
 
-        if (dep.delay > 60) {
-          timeCell.style.color = "#ff4444";
-        }
-
         row.appendChild(lineCell);
         row.appendChild(dirCell);
         row.appendChild(timeCell);
