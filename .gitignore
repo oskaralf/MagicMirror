@@ -69,6 +69,7 @@ Temporary Items
 
 # Ignore users config file but keep the sample.
 config/config.js
+config/config.js-old
 config/config.env
 !config/config.js.sample
 
